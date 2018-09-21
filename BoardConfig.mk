@@ -15,5 +15,8 @@ TARGET_OTA_ASSERT_DEVICE := ursa
 # Kernel
 TARGET_KERNEL_CONFIG := ursa_defconfig
 
+# NFC
+TARGET_USES_NQ_NFC := true
+
 # Inherit from the proprietary version
 -include vendor/xiaomi/ursa/BoardConfigVendor.mk
