@@ -12,6 +12,9 @@ DEVICE_PATH := device/xiaomi/ursa
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ursa
 
+# Display
+TARGET_SCREEN_DENSITY := 440
+
 # Kernel
 TARGET_KERNEL_CONFIG := ursa_defconfig
 
