@@ -15,6 +15,9 @@ TARGET_OTA_ASSERT_DEVICE := ursa
 # Kernel
 TARGET_KERNEL_CONFIG := ursa_defconfig
 
+# HIDL
+DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
+
 # NFC
 TARGET_USES_NQ_NFC := true
 
