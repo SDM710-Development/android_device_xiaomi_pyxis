@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2019 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -13,7 +13,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_NAME := lineage_ursa
 PRODUCT_DEVICE := ursa
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Mi 8 Explorer Edition
+PRODUCT_MODEL := MI 8 Explorer Edition
 PRODUCT_MANUFACTURER := Xiaomi
 
 BUILD_FINGERPRINT := "Xiaomi/ursa/ursa:8.1.0/OPM1.171019.026/V9.6.5.0.OEHCNFD:user/release-keys"
