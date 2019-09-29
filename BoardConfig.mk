@@ -12,9 +12,6 @@ DEVICE_PATH := device/xiaomi/ursa
 # Assert
 TARGET_OTA_ASSERT_DEVICE := ursa
 
-# Display
-TARGET_HAS_WIDE_COLOR_DISPLAY := true
-
 # Kernel
 TARGET_KERNEL_CONFIG := ursa_defconfig
 
