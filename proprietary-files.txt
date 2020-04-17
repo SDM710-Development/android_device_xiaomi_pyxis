@@ -1,3 +1,5 @@
+# Device proprietary files - from ursa's MIUI package V11.0.3.0.QEHCNXM CN stable version
+
 # ACDB
 vendor/etc/acdbdata/Tutu/Tutu_workspaceFile.qwsp
 vendor/etc/acdbdata/Tutu/Tutu_Speaker_cal.acdb
