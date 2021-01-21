@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_ursa.mk
+    $(LOCAL_DIR)/lineage_pyxis.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_ursa-user \
-    lineage_ursa-userdebug \
-    lineage_ursa-eng
+    lineage_pyxis-user \
+    lineage_pyxis-userdebug \
+    lineage_pyxis-eng
