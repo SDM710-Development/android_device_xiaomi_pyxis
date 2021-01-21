@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/dipper/dipper-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/pyxis/pyxis-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2248
@@ -44,8 +44,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := true
 
-# Inherit from sdm845-common
-$(call inherit-product, device/xiaomi/sdm845-common/sdm845.mk)
+# Inherit from sdm710-common
+$(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -67,7 +67,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm845
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm710
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -85,7 +85,7 @@ PRODUCT_COPY_FILES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.xiaomi_sdm845
+    vendor.lineage.livedisplay@2.0-service.xiaomi_sdm710
 
 # NFC
 PRODUCT_PACKAGES += \

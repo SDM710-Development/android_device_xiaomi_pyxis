@@ -8,10 +8,10 @@
 set -e
 
 # Required!
-export DEVICE=dipper
-export DEVICE_COMMON=sdm845-common
+export DEVICE=pyxis
+export DEVICE_COMMON=sdm710-common
 export VENDOR=xiaomi
 
-export DEVICE_BRINGUP_YEAR=2018
+export DEVICE_BRINGUP_YEAR=2019
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
