@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product-if-exists, vendor/xiaomi/pyxis/pyxis-vendor.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2248
+TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
 # Overlays
