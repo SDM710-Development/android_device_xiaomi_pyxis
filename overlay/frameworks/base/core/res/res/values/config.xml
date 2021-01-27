@@ -24,6 +24,15 @@
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
+    <!-- Default value for led color when battery is fully charged -->
+    <integer name="config_notificationsBatteryFullARGB">0x7F007F00</integer>
+
+    <!-- Default value for led color when battery is low on charge -->
+    <integer name="config_notificationsBatteryLowARGB">0x7F7F0000</integer>
+
+    <!-- Default value for led color when battery is medium charged -->
+    <integer name="config_notificationsBatteryMediumARGB">0x7F7F7F00</integer>
+
     <!-- Indicate whether to allow the device to suspend when the screen is off
          due to the proximity sensor.  This resource should only be set to true
          if the sensor HAL correctly handles the proximity sensor as a wake-up source.
@@ -41,7 +50,7 @@
          brightness changes occur in response to an observed change in light level that exceeds the
          hysteresis threshold. -->
     <integer name="config_autoBrightnessBrighteningLightDebounce">2000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">2000</integer>
 
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
@@ -667,13 +676,14 @@
          Note that a physical cutout should be configured in pixels for the best results.
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M295,0
-        295.818519,24.176374
-        C285.295731,69.8076784 267.243762,88 236.156733,88
-        L0,88
-        L-236.156733,88
-        C-267.243762,88 -285.295731,69.8076784 -295.818519,24.176374
-        L-295,0
+        M-76.9985203,12.6526029
+        C-66.7142769,24.2251334 -58.6436698,34.9109506 -52.7866989,44.7100544
+        C-41.8225823,63.0604145 -22.0817847,75 0.00269388614,75
+        C22.0871725,75 41.8225823,63.0604145 52.7920867,44.7100544
+        C58.6467515,34.9122099 66.7153603,24.2272938 76.9979132,12.6553061
+        L77,0
+        L-76.9991414,0
+        L-76.9985203,12.6526029
         Z
     </string>
 
@@ -683,8 +693,16 @@
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">88.0px</dimen>
+    <dimen name="status_bar_height_portrait">27.269989dip</dimen>
     <dimen name="status_bar_height_landscape">24.0dp</dimen>
+
+    <!-- Radius of the software rounded corners at the top of the display in its natural
+         orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_top">96px</dimen>
+
+    <!-- Radius of the software rounded corners at the bottom of the display in its natural
+         orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_bottom">106px</dimen>
 
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
@@ -704,5 +722,8 @@
         <item>1</item> <!-- COLOR_MODE_BOOSTED -->
         <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
     </integer-array>
+
+    <!-- Shows the required view for in-display fingerprint -->
+    <bool name="config_supportsInDisplayFingerprint">true</bool>
 
 </resources>
