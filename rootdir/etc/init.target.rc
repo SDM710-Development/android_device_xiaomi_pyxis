@@ -31,50 +31,29 @@ on init
     write /sys/class/leds/ir/max_brightness 63
 
 on boot
-    chown gps system /sys/devices/platform/soc/890000.spi/spi_master/spi32766/spi32766.0/nstandby
-    chmod 0774 /sys/devices/platform/soc/890000.spi/spi_master/spi32766/spi32766.0/nstandby
-    chown gps system /dev/bbd_control
-    chmod 0774 /dev/bbd_control
-    chown gps system /dev/bbd_patch
-    chmod 0774 /dev/bbd_patch
-    chown gps system /dev/bbd_sensor
-    chmod 0774 /dev/bbd_sensor
+    start rmt_storage
+    start rfs_access
+    chmod 0660 /dev/lirc0
+    chown system system /dev/lirc0
+    chown system system /sys/kernel/hbtp/display_pwr
+
+    # Add torch node for cit
+    chown system system /sys/class/leds/led:torch_0/brightness
+    chown system system /sys/class/leds/led:torch_1/brightness
+    chown system system /sys/class/leds/led:switch_0/brightness
+    chown system system /sys/class/leds/led:torch_2/brightness
+    chown system system /sys/class/leds/led:switch_1/brightness
+    chown system system /sys/class/leds/flashlight/brightness
+
+    chown system system /sys/class/leds/red/blink
+    chown system system /sys/class/leds/green/blink
+    chown system system /sys/class/leds/blue/blink
 
 on post-fs-data
-    mkdir /data/vendor/gps
-    mkdir /data/vendor/gps/log
-    mkdir /data/vendor/gps/log/gps
-    mkdir /data/vendor/gps/log/lhd
-    chown gps system /data/vendor/gps
-    chown gps system /data/vendor/gps/log
-    chown gps system /data/vendor/gps/log/gps
-    chown gps system /data/vendor/gps/log/lhd
-    chown gps system /dev/ttyBCM
-    chmod 775 /data/vendor/gps
-    chmod 775 /data/vendor/gps/log
-    chmod 770 /data/vendor/gps/log/gps
-    chmod 770 /data/vendor/gps/log/lhd
-    chmod 775 /dev/ttyBCM
-
-service glgps /vendor/bin/glgps -c /vendor/etc/gpsconfig.xml
-    socket gps seqpacket 660 gps system
-    class late_start
-    user gps
-    group system inet sdcard_rw wakelock
-    ioprio rt 0
-
-service ignss_2_0 /vendor/bin/ignss_2_0
-    class late_start
-    user system
-    group system inet sdcard_rw wakelock
-
-service lhd /vendor/bin/lhd /vendor/etc/lhd.conf
-    class late_start
-    user gps
-    group system inet net_raw sdcard_rw wakelock
-    ioprio rt 0
-
-service remosaic_daemon /vendor/bin/remosaic_daemon
-    class late_start
-    user camera
-    group camera
+    mkdir /data/vendor/hbtp 0750 system system
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    chmod 666 /sys/class/drm/card0-DSI-1/disp_count
+    chown system system /sys/class/drm/card0-DSI-1/dim_alpha
+    chown system system /sys/class/drm/card0-DSI-1/fod_ui_ready
+    chown system system /sys/class/drm/card0-DSI-1/dim_layer_enable
+    chown system system /sys/class/drm/card0-DSI-1/dimlayer_hbm_enabled
