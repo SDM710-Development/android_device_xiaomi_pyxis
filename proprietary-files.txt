@@ -284,6 +284,7 @@ vendor/lib64/libloc_api_v02.so
 vendor/lib64/liblocationservice.so
 vendor/lib64/liblocationservice_glue.so
 vendor/lib64/liblowi_client.so
+vendor/lib64/libqdma_file_agent.so
 vendor/lib64/libxtadapter.so
 vendor/lib64/vendor.qti.gnss@1.0.so
 vendor/lib64/vendor.qti.gnss@1.1.so
