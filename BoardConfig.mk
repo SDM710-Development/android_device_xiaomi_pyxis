@@ -15,7 +15,7 @@ DEVICE_PATH := device/xiaomi/pyxis
 TARGET_OTA_ASSERT_DEVICE := pyxis
 
 # Display
-TARGET_SCREEN_DENSITY := 403
+TARGET_SCREEN_DENSITY := 440
 
 # Kernel
 TARGET_KERNEL_CONFIG := pyxis_defconfig
