@@ -263,6 +263,12 @@ vendor/lib64/hw/consumerir.default.so
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
 
+# DRM
+vendor/lib64/libhdcpsrm.so
+vendor/lib64/liboemcrypto.so
+vendor/lib/libhdcpsrm.so
+vendor/lib/liboemcrypto.so
+
 # FM
 vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
