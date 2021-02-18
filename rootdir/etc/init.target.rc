@@ -82,6 +82,11 @@ service cdsprpcd /vendor/bin/cdsprpcd
     user system
     group system
 
+service panel-info-sh /vendor/bin/init.panel_info.sh
+    class core
+    user root
+    oneshot
+
 service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
     class main
     user root
