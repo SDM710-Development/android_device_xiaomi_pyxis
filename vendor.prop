@@ -1,15 +1,10 @@
 # Audio
+ro.vendor.audio.game.effect=true
 ro.vendor.audio.sos=true
 ro.vendor.audio.soundfx.type=mi
-vendor.audio.apptype.multirec.enabled=false
-vendor.audio.feature.hifi_audio.enable=true
-vendor.audio.feature.incall_music.enable=true
-vendor.audio.keep_alive.disabled=false
-vendor.audio.offload.buffer.size.kb=64
-vendor.audio.offload.gapless.enabled=true
-vendor.audio.offload.multiple.enabled=false
-vendor.audio.record.multiple.enabled=false
-vendor.audio.volume.headset.gain.depcal=true
+ro.vendor.audio.voice.volume.boost=manual
+vendor.audio.feature.compr_voip.enable=false
+vendor.voice.path.for.pcm.voip=false
 
 # Crypto
 ro.crypto.volume.filenames_mode=aes-256-cts
@@ -30,8 +25,10 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
 # Listen
+ro.vendor.audio.soundtrigger=xiaomi
 ro.vendor.audio.soundtrigger.lowpower=false
 
 # NFC
 ro.hardware.nfc_nci=nqx.default
 ro.se.type=HCE,UICC
+ro.vendor.nfc.repair=1
