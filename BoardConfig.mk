@@ -20,7 +20,6 @@ TARGET_SCREEN_DENSITY := 440
 # Kernel
 TARGET_KERNEL_CONFIG := pyxis_defconfig
 BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
