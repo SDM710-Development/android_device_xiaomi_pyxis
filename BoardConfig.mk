@@ -17,6 +17,10 @@ TARGET_OTA_ASSERT_DEVICE := pyxis
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# FM
+BOARD_HAS_QCA_FM_SOC := "cherokee"
+BOARD_HAVE_QCOM_FM := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := pyxis_defconfig
 
