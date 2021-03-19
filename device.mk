@@ -72,6 +72,9 @@ TARGET_HAS_FOD := true
 PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor:64
 
+# FM
+BOARD_HAVE_QCOM_FM := true
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/gps_debug.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/gps_debug.conf
