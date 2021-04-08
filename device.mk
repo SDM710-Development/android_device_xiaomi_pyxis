@@ -66,6 +66,9 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 TARGET_HAS_FOD := true
 
+PRODUCT_PACKAGES += \
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor:64
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/gps_debug.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/gps_debug.conf
