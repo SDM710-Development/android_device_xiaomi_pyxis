@@ -17,6 +17,5 @@ ro.vendor.audio.soundtrigger=xiaomi
 ro.vendor.audio.soundtrigger.lowpower=false
 
 # NFC
-ro.hardware.nfc_nci=nqx.default
 ro.se.type=HCE,UICC
 ro.vendor.nfc.repair=1
