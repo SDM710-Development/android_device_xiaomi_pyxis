@@ -16,10 +16,10 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi 9 Lite
 PRODUCT_MANUFACTURER := Xiaomi
 
-BUILD_FINGERPRINT := "Xiaomi/pyxis/pyxis:9/PKQ1.181121.001/V11.3.3.0.PFCMIXM:user/release-keys"
+BUILD_FINGERPRINT := "Xiaomi/pyxis/pyxis:10/QKQ1.190828.002/V12.0.6.0.QFCMIXM:user/release-keys"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="pyxis-user 9 PKQ1.181121.001 V11.3.3.0.PFCMIXM release-keys" \
+    PRIVATE_BUILD_DESC="pyxis-user 10 QKQ1.190828.002 V12.0.6.0.QFCMIXM release-keys" \
     PRODUCT_NAME="pyxis"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
