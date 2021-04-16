@@ -19,6 +19,8 @@
 /dev/block/bootdevice/by-name/system         /                       ext4    ro,barrier=1                                                                                      wait,first_stage_mount
 /dev/block/bootdevice/by-name/vendor         /vendor                 ext4    ro,barrier=1                                                                                      wait,recoveryonly
 
+/dev/block/zram0                             none                    swap    defaults                                                                                          zramsize=50%,zram_backingdev_size=512M
+
 /devices/platform/soc/8804000.sdhci/mmc_host*                        /storage/sdcard1   vfat    nosuid,nodev    wait,voldmanaged=sdcard1:auto,encryptable=footer
 /devices/platform/soc/1da4000.ufshc_card/host*                       /storage/sdcard1   vfat    nosuid,nodev    wait,voldmanaged=sdcard1:auto,encryptable=footer
 /devices/platform/soc/a600000.ssusb/a600000.dwc3/xhci-hcd.0.auto*    /storage/usbotg    vfat    nosuid,nodev    wait,voldmanaged=usbotg:auto
