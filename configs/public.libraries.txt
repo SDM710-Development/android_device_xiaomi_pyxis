@@ -25,5 +25,7 @@ libmialgoengine.so
 libmibokeh_712.so
 libmpbase.so
 libnpu.so
+libprotobuf-cpp-full.so
+libprotobuf-cpp-lite.so
 libqti-perfd-client.so
 libsdsprpc.so
