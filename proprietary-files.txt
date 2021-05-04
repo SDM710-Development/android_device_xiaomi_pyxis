@@ -260,8 +260,8 @@ modem/image/widevine.b05:vendor/firmware/widevine.b05
 modem/image/widevine.b06:vendor/firmware/widevine.b06
 modem/image/widevine.b07:vendor/firmware/widevine.b07
 modem/image/widevine.mdt:vendor/firmware/widevine.mdt
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libwvhidl.so
