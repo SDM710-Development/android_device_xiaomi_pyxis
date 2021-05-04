@@ -65,13 +65,11 @@ vendor/etc/camera/golden_rear_dc_cal_wt.bin
 vendor/etc/camera/GpuKernelRepo.pb
 vendor/etc/camera/LDC_packdata_xiaomi_F3B_src1.dat
 vendor/etc/camera/LDC_packdata_xiaomi_F3B_src2.dat
-vendor/etc/camera/lf_facerank_model.bin
 vendor/etc/camera/libalfpc_tuning.bin
 vendor/etc/camera/megviifacepp_0_5_2_model
 vendor/etc/camera/model_back.dlc
 vendor/etc/camera/model_front.dlc
 vendor/etc/camera/sceneDetection.xml
-vendor/etc/camera/sdm_ys_32p_120_21_5_perturb50.bin
 vendor/etc/camera/visidon_clearshot_params_algoup.xml
 vendor/lib/camera/com.qti.sensor.pyxis_imx582.so
 vendor/lib/camera/com.qti.sensor.pyxis_imx586.so
@@ -193,11 +191,13 @@ vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmpbase.so
 vendor/lib/libnanopb.so
 vendor/lib/libSNPE.so
+vendor/lib/libsnsapi.so
 vendor/lib/libswregistrationalgo.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
 vendor/lib/libVDClearShot.so
 vendor/lib/libVDSuperPhotoAPI.so
+vendor/lib/libvideoutils.so
 vendor/lib/libvidhance.so
 vendor/lib/libXMFD_AgeGender.so
 vendor/lib/lib_denoiser3.so
@@ -225,6 +225,7 @@ vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libnanopb.so
+vendor/lib64/libsnsapi.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libVDClearShot.so
 vendor/lib64/libVDDualCameraClearShot.so
