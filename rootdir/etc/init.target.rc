@@ -49,9 +49,6 @@ on boot
     chown system system /sys/class/leds/green/blink
     chown system system /sys/class/leds/blue/blink
 
-    # Create hvdcp_opti directory
-    mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
-
 on post-fs-data
     mkdir /data/vendor/hbtp 0750 system system
     mkdir /data/vendor/nfc 0770 nfc nfc
@@ -86,8 +83,3 @@ service panel-info-sh /vendor/bin/init.panel_info.sh
     class core
     user root
     oneshot
-
-service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
-    class main
-    user root
-    group system wakelock
