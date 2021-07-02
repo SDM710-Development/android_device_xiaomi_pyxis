@@ -1,6 +1,5 @@
 # Audio
 ro.vendor.audio.game.effect=true
-ro.vendor.audio.soundfx.type=mi
 ro.vendor.audio.voice.volume.boost=manual
 vendor.audio.feature.compr_voip.enable=false
 vendor.voice.path.for.pcm.voip=false
