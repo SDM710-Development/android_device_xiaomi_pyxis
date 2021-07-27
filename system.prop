@@ -18,6 +18,10 @@ persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac-ldac
 persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
 persist.vendor.btstack.enable.splita2dp=true
 
+# Blur
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
+
 # Camera
 persist.camera.cfa.thres.front=0
 persist.camera.cfa.thres.rear=200
