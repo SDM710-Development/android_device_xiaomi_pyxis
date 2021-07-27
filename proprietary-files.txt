@@ -476,10 +476,6 @@ vendor/etc/sensors/proto/sns_ultra_violet.proto
 vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto
 vendor/etc/sensors/sns_reg_config
 
-# Snapdragon Computer Vision Engine
-vendor/lib/libscveFaceRecognition.so
-vendor/lib64/libscveFaceRecognition.so
-
 # Thermal configs
 vendor/etc/thermal-engine-sdm710-camera.conf
 vendor/etc/thermal-engine-sdm710-high.conf
