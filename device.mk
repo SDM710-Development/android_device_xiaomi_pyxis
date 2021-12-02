@@ -4,6 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Inherit from sdm710-common
+$(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Enable updating of APEXes
@@ -41,9 +44,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := true
-
-# Inherit from sdm710-common
-$(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
