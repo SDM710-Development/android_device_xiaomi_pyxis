@@ -75,10 +75,6 @@ PRODUCT_PACKAGES += \
 # FM
 BOARD_HAVE_QCOM_FM := true
 
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.xiaomi_sdm710
-
 # NFC
 TARGET_HAS_NFC := true
 
